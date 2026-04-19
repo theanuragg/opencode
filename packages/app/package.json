@@ -10,9 +10,9 @@
   },
   "scripts": {
     "typecheck": "tsgo -b",
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
+    "start": "node init && vite",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "serve": "vite preview",
     "test": "bun run test:unit",
     "test:ci": "mkdir -p .artifacts/unit && bun test --preload ./happydom.ts ./src --reporter=junit --reporter-outfile=.artifacts/unit/junit.xml",
